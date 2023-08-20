@@ -6,9 +6,11 @@ import {
 } from "redux";
 import thunk from "redux-thunk";
 import { reducer as authReducer } from "./AuthReducer/reducer";
+import { reducer as evaluationHomeReducer } from "./EvaluationHomeReducer/reducer";
 
 const rootReducer = combineReducers({
   authReducer,
+  evaluationHomeReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
